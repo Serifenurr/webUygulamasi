@@ -8,5 +8,11 @@ router.delete('/venues/:venueid', ctrlVenues.deleteVenue);
 router.post('/venues/:venueid/comments', ctrlComments.addComment);
 router.put('/venues/:venueid/comments/:commentid', ctrlComments.updateComment);
 router.delete('/venues/:venueid/comments/:commentid', ctrlComments.deleteComment);
+router
+  .route('/venues')
+  .post(ctrlVenues.venuesCreate) // POST isteği
+  .get(ctrlVenues.venuesListByDistance); // GET isteği
+
+// ... diğer rotalar ...
 
 module.exports = router;
