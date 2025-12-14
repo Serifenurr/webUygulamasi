@@ -72,6 +72,8 @@ const deleteVenue = async function (req, res) {
 };
 
 module.exports = {
+    listVenues,
+    getVenue,
     addVenue,
     updateVenue,
     deleteVenue
