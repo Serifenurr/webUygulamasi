@@ -2,9 +2,9 @@
   "name": "webodev",
   "version": "0.0.0",
   "private": true,
- "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+"scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
     "build": "echo 'Build skipped'"
   },
   "dependencies": {
