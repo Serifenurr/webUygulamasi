@@ -2,8 +2,9 @@
   "name": "webodev",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "start http://localhost:3000 && node app.js"
+ "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
