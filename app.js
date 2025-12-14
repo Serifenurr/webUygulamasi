@@ -42,13 +42,18 @@ app.use(function(req, res, next) {
 
 app.use(function(err, req, res, next) {
   
+  console.error("SUNUCU HATASI:", err);
+
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-
+  
   res.status(err.status || 500);
-  res.render('error');
+  res.json({
+      "error": "Bir hata oluştu",
+      "message": err.message,
+      "detay": err 
+  });
+
 });
-
-
 module.exports = app;

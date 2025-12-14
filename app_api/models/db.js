@@ -1,3 +1,4 @@
+require('./app_api/models/db');
 var mongoose = require('mongoose');
 
 var dbURI = 'mongodb+srv://serifenuryilmaz:mekan2025@cluster0.ua468bs.mongodb.net/mekanbul?retryWrites=true&w=majority';
